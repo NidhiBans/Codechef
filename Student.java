@@ -13,7 +13,7 @@ public class Student {
 
 	public int getTotalSumMarks() {
 		int sum = 0;
-		for (int mark : listOfMarks) {
+		for (int mark : listOfMarks) {//enhaced for loop provided in java 5 for creating loop around array listOfMarks
 
 			sum = sum + mark;
 		}
@@ -22,12 +22,12 @@ public class Student {
 
 	public int getNumberOfMarks() {
 		int number;
-		number = listOfMarks.length;
+		number = listOfMarks.length;//array property og getting length of array
 		return number;
 	}
 
 	public int getMaxMarks() {
-		Arrays.sort(listOfMarks);
+		Arrays.sort(listOfMarks);//array static method to sort an array
 		int number;
 		number = listOfMarks.length;
 
