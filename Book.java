@@ -1,21 +1,30 @@
-package com.oops;
+package com.object;
 
 public class Book {
-	private int noOfCopies; // member variable ENCAPSULATION carried out using access specifier
+	private int id;
+	private String name;
+	private String author;
+	private Reviews review;
 
-	public int getNoOfCopies() {// using setters and getters
-		return noOfCopies;
-	}
-
-	public void IncNoOfCopies(int howmuch) {
-		if (howmuch > 0) { // ENCPSULATION LEVEL2
-			this.noOfCopies = this.noOfCopies + howmuch;
-		}
-	}
-
-	public void setNoOfCopies(int noOfCopies) {
-		this.noOfCopies = noOfCopies; // this is used for local variable
-	}
-
+	Book(int id1, String name1, String author1) {
+		this.id = id1;
+		this.name = name1;
+		this.author = author1;
 
 	}
+
+	public void addreview(Reviews review1) {
+		this.review = review1;
+		System.out.println(review);
+
+	}
+
+	@Override
+	public String toString() {
+		return id + " " + name + " " + author;
+
+}
+
+
+
+}
